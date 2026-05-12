@@ -521,14 +521,14 @@ const WomenService = () => {
         </div>
         <div className="mt-2 mb-2 flex items-center gap-2">
           <button
-            onClick={() => handleAddToCart(service)}
+            onClick={() => handleAddToCart(combo)}
             className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-[#8dcae4] hover:bg-[#79b8d3] hover:-translate-y-0.5 transition-all duration-200 text-slate-900 text-sm font-medium py-2"
           >
             <ShoppingCart className="h-4 w-4" />
             Add to Cart
           </button>
           <button
-            onClick={() => handleBuyNow(service)}
+            onClick={() => handleBuyNow(combo)}
             className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-[#8dcae4] hover:bg-[#79b8d3] hover:-translate-y-0.5 transition-all duration-200 text-slate-900 text-sm font-medium py-2"
           >
             Buy Now
@@ -902,14 +902,14 @@ const WomenService = () => {
             type="button"
             onClick={() =>
               window.open(
-                service.googleReviewLink ||
+                combo.googleReviewLink ||
                   "https://www.google.com/search?hl=en-IN&gl=in&q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&ludocid=13967352830529973394&lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&ibp=gwp%3B0,7&authuser=2&hl=en&gl=IN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D",
                 "_blank",
               )
             }
             className="text-slate-500 text-xs hover:text-[#8dcae4] hover:underline transition-colors"
           >
-            ⭐ {service.rating} ({service.reviews} Reviews)
+            ⭐ {combo.rating} ({combo.reviews} Reviews)
           </button>
 
           <CareButton />
