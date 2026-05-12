@@ -4,6 +4,7 @@ import { Mail, ArrowRight, ArrowLeft, Loader2, CheckCircle2, RotateCw } from 'lu
 import '../styles/ForgotPassword.css';
 import flawSkin from '../assets/flawSkin.jpeg';
 import api from '../api/axios'; // Assuming you have an API utility for making requests
+import { toast } from "sonner";
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState('');
